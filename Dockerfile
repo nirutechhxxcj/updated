@@ -13,8 +13,8 @@ COPY requirements.txt /requirements.txt
 # Installing Requirements
 RUN cd /
 
-RUN mkdir /MissPerfectURL
-WORKDIR /MissPerfectURL
+RUN mkdir .. 
+WORKDIR .. 
 
 # Running MessageSearchBot
 CMD ["bash", "start.sh"]
