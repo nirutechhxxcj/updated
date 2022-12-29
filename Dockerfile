@@ -7,7 +7,7 @@ RUN apt install git curl python3-pip ffmpeg -y
 
 # Updating Pip Packages
 RUN pip3 install -U pip
-RUN pip3 install -U requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 # Copying Requirements
 COPY requirements.txt /requirements.txt
 
